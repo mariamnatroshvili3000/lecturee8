@@ -1,0 +1,396 @@
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:400");
+
+body {
+  font-family: "FiraGO", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+.logo {
+  margin-left: 435px;
+  margin-top: 18px;
+  display: flex;
+  width: 161px;
+  height: 46px;
+}
+
+.row {
+  display: flex;
+  width: 1920px;
+  height: 80px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #6f7383;
+}
+
+.txt1 {
+  margin-left: 435px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.grid-container {
+  height: 520px;
+  width: 250px;
+  background-color: white;
+  margin-left: 430px;
+  margin-top: 20px;
+  border: 1px solid #e2e5eb;
+  box-shadow: 0px 4px 16px rgba(164, 174, 193, 0.1);
+  border-radius: 12px 12px 0px 0px;
+}
+
+.grid-child {
+  display: grid;
+  grid-template-columns: 83px 83px 83px;
+  width: 250px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.sedan {
+  width: 30px;
+  height: 14px;
+  background-color: white;
+}
+
+.tractor {
+  width: 22px;
+  height: 18px;
+  background-color: white;
+}
+
+.bike {
+  width: 22px;
+  height: 16px;
+  background-color: white;
+}
+
+.sedan-btn {
+  border: none;
+  background-color: white;
+  border-radius: 12px 0 0 0;
+  border-bottom: 1px solid #fd4100;
+}
+
+.tractor-btn {
+  border: none;
+  background-color: #f9f9fb;
+  border-bottom: 1px solid #e9e9f0;
+  border-left: 1px solid #e9e9f0;
+  border-right: 1px solid #e9e9f0;
+}
+
+.bike-btn {
+  border: none;
+  background-color: #f9f9fb;
+  border-radius: 0 12px 0 0;
+  border-bottom: 1px solid #e9e9f0;
+}
+
+.select1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  gap: 110px;
+  width: 230px;
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #c2c9d8;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.select {
+  padding: 12px 8px 12px 12px;
+  background: #ffffff;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #272a37;
+}
+
+.price {
+  border-top: 1px solid #e9e9f0;
+  background-color: white;
+  margin-top: 20px;
+}
+.price-tag {
+  background-color: white;
+  margin-top: 25px;
+  padding-left: 12px;
+  font-size: 15px;
+  float: left;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  background-color: white;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fd4100;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider-button {
+  background-color: white;
+  margin: 20px 180px;
+}
+
+.search {
+  height: 32px;
+  background-color: #fd4100;
+  border: none;
+  border-radius: 6px;
+  margin-left: 12px;
+  color: white;
+  width: 230px;
+}
+
+.search-btn {
+  padding-top: 30px;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px rgba(39, 42, 55, 0.13);
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 780px;
+  height: 1000px;
+  left: 705px;
+  top: 148px;
+}
+
+.txt2 {
+  position: absolute;
+  top: 20px;
+  font-size: 18px;
+  color: #272a37;
+}
+
+.select2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 12px;
+  gap: 4px;
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  left: 468px;
+  top: 20px;
+  background: #ffffff;
+  border: 1px solid #e9e9f0;
+  border-radius: 8px;
+}
+
+.select-time {
+  margin-top: 100px;
+}
+
+.select3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 12px;
+  gap: 4px;
+  position: absolute;
+  width: 164px;
+  height: 40px;
+  left: 616px;
+  top: 20px;
+  background: #ffffff;
+  border: 1px solid #e9e9f0;
+  border-radius: 8px;
+}
+
+.list {
+  box-sizing: border-box;
+  position: absolute;
+  left: 67.86%;
+  right: 22.66%;
+  top: 12.93%;
+  bottom: 72.66%;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  box-shadow: 0px 4px 20px rgba(164, 174, 193, 0.4);
+  border-radius: 8px;
+}
+
+.cars1 {
+  position: absolute;
+  background: #ffffff !important;
+  border-radius: 14px;
+  height: 172px;
+  width: 780px;
+  left: 0px;
+  top: 80px;
+  border-radius: 14px;
+}
+
+.img1 {
+  width: 182px;
+  height: 144px;
+  margin-top: 13px;
+  margin-left: 13px;
+  border-radius: 8px;
+  float: left;
+}
+
+.txt3 {
+  background-color: white;
+  border-radius: 14px;
+  border-radius: 14px;
+  margin-top: 23px;
+  margin-left: 215px;
+  font-size: 17px;
+  color: #272a37;
+}
+
+.info {
+  background-color: white;
+  margin-left: -23px;
+  margin-top: 10px;
+}
+
+.vip {
+  float: left;
+  margin-top: 90px;
+  margin-left: 15px;
+  background-color: white;
+}
+
+.vip2 {
+  float: left;
+  margin-top: 25px;
+  margin-left: 17px;
+  background-color: white;
+}
+
+.year {
+  width: 44px;
+  height: 17px;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: white;
+  color: #8c929b;
+}
+
+.img4 {
+  background-color: white;
+  float: right;
+  margin-top: -85px;
+  margin-right: 9px;
+}
+
+.price2 {
+  background-color: white;
+  position: absolute;
+  margin-top: 20px;
+}
+.img5 {
+  background-color: white;
+  float: bottom;
+  position: absolute;
+  margin-top: 95px;
+  width: 15%;
+}
+
+.cars2 {
+  position: absolute;
+  background: #ffffff !important;
+  border-radius: 14px;
+  height: 172px;
+  width: 780px;
+  left: 705px;
+  top: 415px;
+  border-radius: 14px;
+}
+
+.cars3 {
+  position: absolute;
+  background: #ffffff !important;
+  border-radius: 14px;
+  height: 172px;
+  width: 780px;
+  left: 705px;
+  top: 601px;
+  border-radius: 14px;
+}
+
+.cars4 {
+  position: absolute;
+  background: #ffffff !important;
+  border-radius: 14px;
+  height: 172px;
+  width: 780px;
+  left: 705px;
+  top: 787px;
+  border-radius: 14px;
+}
